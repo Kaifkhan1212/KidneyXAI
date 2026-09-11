@@ -20,6 +20,39 @@ The live KidneyCare-XAI application is available for demonstration and academic 
 
 ---
 
+## 📸 Application Screenshots
+
+### 1. Decision Support Risk Dashboard
+![Dashboard Overview](docs/screenshots/dashboard_overview.png)
+*Overview of patient's estimated risk index, lifestyle adherence score (83/100), daily hydration target status (4.5 L), exercise/sleep metrics, and longitudinal risk trend chart.*
+
+---
+
+### 2. Longitudinal Lifestyle Tracker
+![Daily Lifestyle Tracker](docs/screenshots/daily_tracker.png)
+*Daily recording interface for water intake (L), physical activity (mins), sleep duration (hrs), dietary salt level, sugary drink consumption, and body weight (kg) with KDIGO hydration guidance.*
+
+---
+
+### 3. Clinical Risk Assessment Form
+![Risk Assessment Form](docs/screenshots/risk_assessment.png)
+*Interactive 24-feature clinical assessment intake capturing patient demographics, resting blood pressure, early warning signs (edema, fatigue, appetite status), and lab biomarkers.*
+
+---
+
+### 4. Risk History & SHAP Attributions
+![Risk History & Progression](docs/screenshots/risk_history.png)
+*Longitudinal risk score progression curve over time alongside historical assessment entries with interactive SHAP explanation inspect links.*
+
+---
+
+### 5. Multi-Theme Customization & Ergonomics
+![Theme Settings & Customization](docs/screenshots/theme_settings.png)
+*Customizable visual design language allowing users to toggle between standard Clinical UI and the bold House Brutalist theme with Light, Dark, or System color modes.*
+
+---
+
+
 ## 📌 Project Overview
 
 **KidneyCare-XAI** is a full-stack, clinically-informed, explainable AI (XAI) platform for **Chronic Kidney Disease (CKD) risk assessment and patient lifestyle adherence monitoring**. It uniquely combines machine learning prediction with two-layered human-interpretable explanations — making AI decisions understandable to both clinicians and patients.
@@ -470,7 +503,7 @@ Environment Variables:
 
 ### C. Frontend — Vercel
 
-1. Import `Ogshub/KidneyXAI` from GitHub
+1. Import `Kaifkhan1212/KidneyXAI` from GitHub
 2. Set Root Directory: `kidneycare-xai/frontend`
 3. Framework: Vite | Build: `npm run build` | Output: `dist`
 4. Environment Variables:

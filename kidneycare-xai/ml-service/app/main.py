@@ -70,6 +70,21 @@ app.add_middleware(
 # ── Endpoints ──────────────────────────────────────────────
 
 
+@app.get("/")
+async def root():
+    """Root endpoint providing service status and API documentation entrypoints."""
+    return {
+        "service": "KidneyCare-XAI ML Microservice (FastAPI)",
+        "status": "healthy" if artifacts.is_loaded else "demo",
+        "modelVersion": artifacts.model_version if artifacts.is_loaded else "1.0",
+        "documentation": "/docs",
+        "healthCheck": "/health",
+        "modelInfo": "/model-info",
+        "frontendUrl": "http://localhost:3000"
+    }
+
+
+
 @app.post("/predict", response_model=PredictionResponse)
 async def predict_risk(request: PredictionRequest):
     """

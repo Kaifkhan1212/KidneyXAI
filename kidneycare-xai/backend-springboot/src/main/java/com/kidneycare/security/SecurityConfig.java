@@ -43,12 +43,14 @@ public class SecurityConfig {
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         // Public endpoints (no JWT required)
+                        .requestMatchers("/", "/api/health").permitAll()
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/research/**").permitAll()
                         .requestMatchers("/api/assessments/model-evaluation").permitAll()
                         // Everything else requires authentication
                         .requestMatchers("/api/**").authenticated()
                         .anyRequest().permitAll()
+
                 )
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
