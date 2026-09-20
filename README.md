@@ -18,6 +18,20 @@
 
 The live KidneyCare-XAI application is available for demonstration and academic evaluation.
 
+## 📱 Mobile App
+
+The KidneyCare-XAI platform is also available as an Android mobile application.
+
+### Download APK
+
+[⬇️ Download KidneyXAI Android App](https://github.com/Kaifkhan1212/KidneyXAI/releases/latest/download/kidney-XAI.apk)
+
+**APK Version:** v1.0.0  
+**File Size:** 101 MB  
+**SHA-256:** `c00a0cd81967b86d41bcbba1ec15630631020376d5d1116a21d525228761d14a`
+
+> **Installation:** Download the APK and install it on your Android device. Android may require permission to install apps from unknown sources.
+
 ---
 
 ## 📸 Application Screenshots
